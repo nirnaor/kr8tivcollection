@@ -7,10 +7,25 @@
   = csrf_meta_tags
 
 %body
-  %ul
-    %li
-      = link_to "Rings", jewels_path(:category => 'rings')
-      = link_to "Bracelets", jewels_path(:category => 'bracelets')
-      = link_to "Earrings", jewels_path(:category => 'earrings')
-      = link_to "Necklaces", jewels_path(:category => 'necklaces')
-= yield
+  %div#main
+    %div#logoandmenu
+      %div#banner
+        = link_to image_tag('blacklogo.gif'), root_path
+      %div#menu
+        %ul#menulist
+          %li
+            = link_to "Rings", jewels_path(:category => 'rings')
+          %li
+            = link_to "Bracelets", jewels_path(:category => 'bracelets')
+          %li
+            = link_to "Earrings", jewels_path(:category => 'earrings')
+          %li
+            = link_to "Necklaces", jewels_path(:category => 'necklaces')
+      = yield
+
+      %div#footer
+        %h1
+          "your dreams are my reality"
+
+
+          
