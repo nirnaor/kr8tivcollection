@@ -1,0 +1,29 @@
+.page-header
+  %h1 Jewels
+
+%table.table.table-striped.table-bordered
+  %tr
+    %th= t 'activerecord.attributes.jewel.name'
+    %th= t 'activerecord.attributes.jewel.description'
+    %th= t 'activerecord.attributes.jewel.weight'
+    %th
+
+  - @jewels.each do |jewel|
+    %tr
+      %td= jewel.name
+      %td= jewel.description
+      %td= jewel.weight
+      %td
+        = link_to t(:show), jewel, class: 'btn btn-mini'
+        = link_to t(:edit), edit_jewel_path(jewel),
+          class: 'btn btn-mini'
+        = link_to t(:destroy), jewel, 
+          :confirm => t(:are_you_sure, default: "Are you sure?"), :method => :delete,
+          class: 'btn btn-mini btn-danger'
+
+%br
+
+= link_to new_jewel_path, class: 'btn btn-success' do
+  %i.icon-plus.icon-white
+  = t(:new_jewel)
+

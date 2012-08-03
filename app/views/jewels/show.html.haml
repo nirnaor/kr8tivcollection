@@ -1,0 +1,12 @@
+%p
+  %b Name:
+  = @jewel.name
+%p
+  %b Description:
+  = @jewel.description
+%p
+  %b Weight:
+  = @jewel.weight
+
+= link_to t(:edit), edit_jewel_path(@jewel), class: 'btn'
+= link_to t(:back), jewels_path, class: 'btn'
