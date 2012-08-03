@@ -1,6 +1,15 @@
 class Jewel < ActiveRecord::Base
   attr_accessible :description, :name, :weight, :category,
     :metal_color, :metal_weight, :clarity, :cut
+
+  validates_presence_of :description, :name, :weight, :category,
+    :metal_color, :metal_weight, :clarity, :cut
+
+  validates_format_of :name,:description , :with => /[A-Za-z]/, 
+    :message => "only english letters are allowed here"
+
+  validates_numericality_of :weight, :greater_than => 0
+
   as_enum :category, :rings => 3, :necklaces => 2, :bracelets => 1,
     :earrings => 0
   as_enum :metal_color, :gold=> 2, :silver => 1, :platinum => 0
