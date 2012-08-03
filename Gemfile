@@ -11,6 +11,7 @@ gem 'haml-bootstrap-rails'
 gem 'bootstrap-sass'
 gem 'compass-rails'
 
+gem "paperclip", "~> 3.0"
 gem 'simple_form'
 gem 'simple_enum'
 gem 'draper'

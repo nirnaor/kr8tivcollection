@@ -3,6 +3,7 @@
 
   .form-inputs
     = f.input :name
+    = f.file_field :primary_image
     = f.input :weight
     = f.input :category ,:collection => Jewel.categories_for_select , :selected => 1
     = f.input :description

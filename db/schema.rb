@@ -11,19 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120803113026) do
+ActiveRecord::Schema.define(:version => 20120803133239) do
 
   create_table "jewels", :force => true do |t|
     t.string   "name"
     t.string   "description"
     t.integer  "weight"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
     t.integer  "category_cd"
     t.integer  "metal_color_cd"
     t.integer  "metal_weight_cd"
     t.integer  "clarity_cd"
     t.integer  "cut_cd"
+    t.string   "primary_image_file_name"
+    t.string   "primary_image_content_type"
+    t.integer  "primary_image_file_size"
+    t.datetime "primary_image_updated_at"
   end
 
 end

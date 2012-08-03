@@ -52,6 +52,7 @@ GEM
       ffi (~> 1.0, >= 1.0.6)
     chunky_png (1.2.5)
     clipboard (1.0.1)
+    cocaine (0.2.1)
     coderay (1.0.7)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -168,6 +169,12 @@ GEM
     nokogiri (1.5.5)
     ori (0.1.0)
     paint (0.8.5)
+    paperclip (3.0.4)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (>= 0.0.2)
+      mime-types
     poltergeist (0.7.0)
       capybara (~> 1.1)
       childprocess (~> 0.3)
@@ -284,6 +291,7 @@ DEPENDENCIES
   jasminerice
   jquery-rails
   launchy
+  paperclip (~> 3.0)
   poltergeist
   pry
   rails (= 3.2.3)
