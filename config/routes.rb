@@ -1,4 +1,6 @@
 Kr8tivcollection::Application.routes.draw do
+  get "home/index"
+
   resources :jewels
   root :to => 'welcome#index'
 

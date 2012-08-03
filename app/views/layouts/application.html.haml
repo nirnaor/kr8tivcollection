@@ -21,8 +21,9 @@
             %li
               %a{href: '#'}
                 %i.icon-plus
-                Add something
+                  = link_to "Rings", jewels_path(:category => 'rings')
       .span9
         - unless notice.nil?
           #notice.alert= notice
         = yield
+  %div

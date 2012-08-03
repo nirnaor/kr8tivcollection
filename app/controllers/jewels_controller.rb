@@ -2,12 +2,20 @@ class JewelsController < ApplicationController
   # GET /jewels
   # GET /jewels.json
   def index
-    @jewels = Jewel.all
+    @jewels = get_jewels_by_category(params[:category])
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @jewels }
     end
+  end
+
+  def get_jewels_by_category(category)
+    category_code = Jewel.categories(category)
+    relevant_jewels  = Jewel.find_by_category_cd(category_code)
+    result = []
+    result << relevant_jewels
+    result
   end
 
   # GET /jewels/1

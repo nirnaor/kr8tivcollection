@@ -6,6 +6,7 @@
     %th= t 'activerecord.attributes.jewel.name'
     %th= t 'activerecord.attributes.jewel.description'
     %th= t 'activerecord.attributes.jewel.weight'
+    %th= t 'activerecord.attributes.jewel.category'
     %th
 
   - @jewels.each do |jewel|
@@ -13,6 +14,7 @@
       %td= jewel.name
       %td= jewel.description
       %td= jewel.weight
+      %td= jewel.category
       %td
         = link_to t(:show), jewel, class: 'btn btn-mini'
         = link_to t(:edit), edit_jewel_path(jewel),
