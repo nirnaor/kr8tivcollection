@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120803103529) do
+ActiveRecord::Schema.define(:version => 20120803112355) do
 
   create_table "jewels", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20120803103529) do
     t.integer  "weight"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "category_cd"
   end
 
 end

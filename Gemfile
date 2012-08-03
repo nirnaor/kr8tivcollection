@@ -12,6 +12,7 @@ gem 'bootstrap-sass'
 gem 'compass-rails'
 
 gem 'simple_form'
+gem 'simple_enum'
 gem 'draper'
 
 gem 'capistrano'

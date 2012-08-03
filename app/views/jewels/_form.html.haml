@@ -5,6 +5,7 @@
     = f.input :name
     = f.input :description
     = f.input :weight
+    = select(:jewel, :category, Jewel.categories_for_select) 
 
   .form-actions
     = f.button :submit
