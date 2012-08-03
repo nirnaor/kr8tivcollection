@@ -22,6 +22,9 @@
               %a{href: '#'}
                 %i.icon-plus
                   = link_to "Rings", jewels_path(:category => 'rings')
+                  = link_to "Bracelets", jewels_path(:category => 'bracelets')
+                  = link_to "Earrings", jewels_path(:category => 'earrings')
+                  = link_to "Necklaces", jewels_path(:category => 'necklaces')
       .span9
         - unless notice.nil?
           #notice.alert= notice
