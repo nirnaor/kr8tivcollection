@@ -3,9 +3,13 @@
 
   .form-inputs
     = f.input :name
-    = f.input :description
     = f.input :weight
-    = select(:jewel, :category, Jewel.categories_for_select) 
+    = f.input :category ,:collection => Jewel.categories_for_select , :selected => 1
+    = f.input :description
+    = f.input :metal_color ,:collection => Jewel.metal_colors_for_select, :selected => 1 
+    = f.input :metal_weight ,:collection => Jewel.metal_weights_for_select, :selected => 1 
+    = f.input :clarity ,:collection => Jewel.clarities_for_select, :selected => 1 
+    = f.input :cut ,:collection => Jewel.cuts_for_select, :selected => 1 
 
   .form-actions
     = f.button :submit

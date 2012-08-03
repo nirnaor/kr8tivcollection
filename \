@@ -1,0 +1,10 @@
+= simple_form_for(@jewel) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :category, as: :select 
+    = f.input :description
+
+  .form-actions
+    = f.button :submit
