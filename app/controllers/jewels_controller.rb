@@ -12,10 +12,7 @@ class JewelsController < ApplicationController
 
   def get_jewels_by_category(category)
     category_code = Jewel.categories(category)
-    relevant_jewels  = Jewel.find_by_category_cd(category_code)
-    result = []
-    result << relevant_jewels
-    result
+    relevant_jewels  = Jewel.find_all_by_category_cd(category_code)
   end
 
   # GET /jewels/1
