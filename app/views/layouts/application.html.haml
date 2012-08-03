@@ -7,21 +7,10 @@
   = csrf_meta_tags
 
 %body
-  .container
-    .row
-      .span3
-        .well.nav-container
-          %ul.nav.nav-list
-            %li.nav-header Section1
-            %li
-              %a{href: '#'}
-                %i.icon-plus
-                  = link_to "Rings", jewels_path(:category => 'rings')
-                  = link_to "Bracelets", jewels_path(:category => 'bracelets')
-                  = link_to "Earrings", jewels_path(:category => 'earrings')
-                  = link_to "Necklaces", jewels_path(:category => 'necklaces')
-      .span9
-        - unless notice.nil?
-          #notice.alert= notice
-        = yield
-  %div
+  %ul
+    %li
+      = link_to "Rings", jewels_path(:category => 'rings')
+      = link_to "Bracelets", jewels_path(:category => 'bracelets')
+      = link_to "Earrings", jewels_path(:category => 'earrings')
+      = link_to "Necklaces", jewels_path(:category => 'necklaces')
+= yield
