@@ -1,17 +1,9 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-#initBasicUrl = ->
-printImagesArray = ->
-  console.log "this is the array from the server"
-  console.log window.gallery_files
 initGalleryFlow = ->
-  initBasicUrl()
   if Modernizr.touch
     buildSlider()
   else
     window.setTimeout buildContentFlow, 200
 
-#buildContentFlow();
 buildContentFlow = ->
   flowDiv = $("#galleryflow")[0]
   allImages = getImagesArray()
@@ -53,10 +45,10 @@ getImagesArray = ->
   imagesArray = new Array()
   i = 0
 
-  while i < window.gallery_files.length
-    path = window.gallery_files[i]["mainImagePath"]
-    jewelName = window.gallery_files[i]["jewelName"]
-    jewelId = window.gallery_files[i]["jewelId"]
+  while i < gon.jewels.length
+    path = gon.jewels[i]["primary_image_file_name"]
+    jewelName = gon.jewels[i]["name"]
+    jewelId = gon.jewels[i]["id"]
     console.log "path : " + path
     console.log "jewelid : " + jewelId
     newImage = createNewImage(path, jewelName, jewelId)
@@ -78,4 +70,3 @@ basicUrl = undefined
 $(document).ready ->
   window.imagesLeftToLoad = gon.jewels.length
   initGalleryFlow()
-  printImagesArray()
