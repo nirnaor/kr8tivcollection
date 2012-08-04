@@ -106,6 +106,9 @@ GEM
       ruby_gntp
     gherkin (2.11.1)
       json (>= 1.4.6)
+    gon (4.0.0)
+      actionpack (>= 2.3.0)
+      json
     haml (3.1.6)
     haml-bootstrap-rails (0.3.11)
       actionpack (~> 3.0)
@@ -285,6 +288,7 @@ DEPENDENCIES
   debugger
   draper
   fabrication
+  gon
   haml-bootstrap-rails
   irbtools
   jasmine-sinon-rails

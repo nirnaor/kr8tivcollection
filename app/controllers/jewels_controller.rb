@@ -3,6 +3,7 @@ class JewelsController < ApplicationController
   # GET /jewels.json
   def index
     @jewels = get_jewels_by_category(params[:category])
+    gon.jewels = @jewels
 
     respond_to do |format|
       format.html # index.html.erb

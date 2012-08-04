@@ -15,6 +15,7 @@ gem "paperclip", "~> 3.0"
 gem 'simple_form'
 gem 'simple_enum'
 gem 'draper'
+gem 'gon'
 
 gem 'capistrano'
 gem 'rvm-capistrano'
