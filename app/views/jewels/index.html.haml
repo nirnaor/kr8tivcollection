@@ -36,6 +36,7 @@
     .indicator
   .flow
 -@jewels.each do |jewel|
+  =link_to t(:show),jewel
   =image_tag jewel.primary_image.url
   .globalCaption
   .scrollbar
