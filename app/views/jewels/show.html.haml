@@ -1,9 +1,22 @@
-%p
-  %b Name:
-  = @jewel.name
-%p
-  %b Primary Image:
-  = image_tag @jewel.primary_image.url
+= image_tag @jewel.primary_image.url
+%div#description
+  %p
+#details
+  %dl
+    %dt Clarity:
+    %dd#clarity consectetur
+    %dt Weight:
+    %dd#weight ectus
+  %dt Cut:
+  %dd#cut consectetur
+  %dt Metal:
+  %dd#metal ectus
+
+
+%div#emptydiv
+
+%div#birth
+
 %p
   %b Description:
   = @jewel.description
