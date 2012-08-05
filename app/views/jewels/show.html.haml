@@ -1,3 +1,5 @@
+%head
+  = javascript_include_tag "application"
 = image_tag @jewel.primary_image.url, id: "mainimage"
 %div#description
   = @jewel.description
@@ -22,13 +24,6 @@
 %div#emptydiv
 
 %div#birth
-
-%p
-  %b Description:
-  = @jewel.description
-%p
-  %b Weight:
-  = @jewel.weight
 
 = link_to t(:edit), edit_jewel_path(@jewel), class: 'btn'
 = link_to t(:back), jewels_path, class: 'btn'
