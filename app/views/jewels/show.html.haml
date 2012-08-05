@@ -4,13 +4,19 @@
 #details
   %dl
     %dt Clarity:
-    %dd#clarity consectetur
+    %dd#clarity 
+      = @jewel.description
     %dt Weight:
-    %dd#weight ectus
+    %dd#weight 
+      = @jewel.weight
+      bla
   %dt Cut:
-  %dd#cut consectetur
+  %dd#cut 
+    = @jewel.cut
   %dt Metal:
-  %dd#metal ectus
+  %dd#metal
+    = "#{@jewel.metal_color} " "#{@jewel.metal_weight}" 
+    Kt
 
 
 %div#emptydiv
