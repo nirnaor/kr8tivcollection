@@ -13,7 +13,7 @@ class Jewel < ActiveRecord::Base
   as_enum :category, :rings => 3, :necklaces => 2, :bracelets => 1,
     :earrings => 0
   as_enum :metal_color, :gold=> 2, :silver => 1, :platinum => 0
-  as_enum :metal_weight, :forteen=> 14, :eighteen => 18, :twentytwo => 22
+  as_enum :metal_weight, 14=> 14, 18 => 18, 22 => 22
   as_enum :clarity, :flawless => 7, :ws1 => 6, :ws2 => 5,
     :vs1 => 4, :vs2 => 3, :si1 => 2, :si2 => 1, :si3 => 0 
   as_enum :cut, :round => 7, :oval => 6, :peer => 5,
