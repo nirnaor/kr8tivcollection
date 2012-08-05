@@ -1,5 +1,3 @@
-%head
-  = javascript_include_tag "application"
 .page-header
   %h1 Jewels
 
@@ -36,8 +34,8 @@
     .indicator
   .flow
     -@jewels.each do |jewel|
-      =link_to jewel do
-        =image_tag jewel.primary_image.url
+      =link_to jewel, class: 'item' do
+        =image_tag jewel.primary_image.url, class: "content", title: "dudi"
   .globalCaption
   .scrollbar
     .slider

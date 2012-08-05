@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require contentflow
+//= require contentflow_src
 //= include modernizr.custom.40054.js
 //= require_tree .
