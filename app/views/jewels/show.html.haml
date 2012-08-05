@@ -1,11 +1,11 @@
-= image_tag @jewel.primary_image.url
+= image_tag @jewel.primary_image.url, id: "mainimage"
 %div#description
-  %p
+  = @jewel.description
 #details
   %dl
     %dt Clarity:
     %dd#clarity 
-      = @jewel.description
+      = @jewel.clarity
     %dt Weight:
     %dd#weight 
       = @jewel.weight
