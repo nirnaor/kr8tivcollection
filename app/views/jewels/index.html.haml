@@ -1,6 +1,7 @@
-= link_to new_jewel_path, class: 'btn btn-success' do
-  %i.icon-plus.icon-white
-  = t(:new_jewel)
+- if can? :update, Jewel
+  = link_to new_jewel_path, class: 'btn btn-success' do
+    %i.icon-plus.icon-white
+    = t(:new_jewel)
 
 .ContentFlow
   .loadIndicator
