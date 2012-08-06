@@ -2,7 +2,7 @@ Kr8tivcollection::Application.routes.draw do
   get "home/index"
 
   resources :jewels
-  root :to => 'welcome#index'
+  root :to => 'home#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
