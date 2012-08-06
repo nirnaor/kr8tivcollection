@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120803133239) do
+ActiveRecord::Schema.define(:version => 20120806110352) do
 
   create_table "jewels", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,13 @@ ActiveRecord::Schema.define(:version => 20120803133239) do
     t.string   "primary_image_content_type"
     t.integer  "primary_image_file_size"
     t.datetime "primary_image_updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end

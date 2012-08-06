@@ -1,4 +1,6 @@
 Kr8tivcollection::Application.routes.draw do
+  resources :users
+
   get "home/index"
 
   resources :jewels

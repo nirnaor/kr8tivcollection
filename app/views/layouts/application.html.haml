@@ -23,6 +23,11 @@
             = link_to "Earrings", jewels_path(:category => 'earrings')
           %li
             = link_to "Necklaces", jewels_path(:category => 'necklaces')
+    %h1{:style => "color: red"}
+      = flash[:alert]
+    %h1{:style => "color: green"}
+      = flash[:notice]
+
     #content
       = yield
 
