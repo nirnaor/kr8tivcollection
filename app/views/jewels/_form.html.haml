@@ -11,6 +11,8 @@
     = f.input :metal_weight ,:collection => Jewel.metal_weights_for_select, :selected => 1 
     = f.input :clarity ,:collection => Jewel.clarities_for_select, :selected => 1 
     = f.input :cut ,:collection => Jewel.cuts_for_select, :selected => 1 
+    = f.file_field :birth_image1
+    = f.file_field :birth_image2
 
   .form-actions
     = f.button :submit

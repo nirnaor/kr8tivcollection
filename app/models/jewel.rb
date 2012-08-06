@@ -1,6 +1,7 @@
 class Jewel < ActiveRecord::Base
   attr_accessible :description, :name, :weight, :category,
-    :metal_color, :metal_weight, :clarity, :cut, :primary_image
+    :metal_color, :metal_weight, :clarity, :cut, :primary_image,
+    :birth_image1, :birth_image2
 
   validates_presence_of :description, :name, :weight, :category,
     :metal_color, :metal_weight, :clarity, :cut
@@ -20,5 +21,8 @@ class Jewel < ActiveRecord::Base
     :heart => 4, :asher => 3, :emrald => 2, :marquise => 1, :radiant => 0 
 
   has_attached_file :primary_image, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+
+  has_attached_file :birth_image1, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+  has_attached_file :birth_image2, :styles => { :medium => "300x300>", :thumb => "100x100>" }
 
 end

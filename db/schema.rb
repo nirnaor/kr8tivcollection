@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120806110352) do
+ActiveRecord::Schema.define(:version => 20120806150447) do
 
   create_table "jewels", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,38 @@ ActiveRecord::Schema.define(:version => 20120806110352) do
     t.string   "primary_image_content_type"
     t.integer  "primary_image_file_size"
     t.datetime "primary_image_updated_at"
+    t.string   "birth_image_1_file_name"
+    t.string   "birth_image_1_content_type"
+    t.integer  "birth_image_1_file_size"
+    t.datetime "birth_image_1_updated_at"
+    t.string   "birth_image_2_file_name"
+    t.string   "birth_image_2_content_type"
+    t.integer  "birth_image_2_file_size"
+    t.datetime "birth_image_2_updated_at"
+    t.string   "birth_image_3_file_name"
+    t.string   "birth_image_3_content_type"
+    t.integer  "birth_image_3_file_size"
+    t.datetime "birth_image_3_updated_at"
+    t.string   "birth_image_4_file_name"
+    t.string   "birth_image_4_content_type"
+    t.integer  "birth_image_4_file_size"
+    t.datetime "birth_image_4_updated_at"
+    t.string   "birth_image_5_file_name"
+    t.string   "birth_image_5_content_type"
+    t.integer  "birth_image_5_file_size"
+    t.datetime "birth_image_5_updated_at"
+    t.string   "birth_image_6_file_name"
+    t.string   "birth_image_6_content_type"
+    t.integer  "birth_image_6_file_size"
+    t.datetime "birth_image_6_updated_at"
+    t.string   "birth_image1_file_name"
+    t.string   "birth_image1_content_type"
+    t.integer  "birth_image1_file_size"
+    t.datetime "birth_image1_updated_at"
+    t.string   "birth_image2_file_name"
+    t.string   "birth_image2_content_type"
+    t.integer  "birth_image2_file_size"
+    t.datetime "birth_image2_updated_at"
   end
 
   create_table "users", :force => true do |t|
