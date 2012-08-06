@@ -25,5 +25,6 @@
 
 %div#birth
 
-= link_to t(:edit), edit_jewel_path(@jewel), class: 'btn'
+- if can? :update, @jewel
+  = link_to t(:edit), edit_jewel_path(@jewel), class: 'btn'
 = link_to t(:back), jewels_path, class: 'btn'
