@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120806150447) do
+ActiveRecord::Schema.define(:version => 20120806151226) do
 
   create_table "jewels", :force => true do |t|
     t.string   "name"
@@ -60,6 +60,22 @@ ActiveRecord::Schema.define(:version => 20120806150447) do
     t.string   "birth_image2_content_type"
     t.integer  "birth_image2_file_size"
     t.datetime "birth_image2_updated_at"
+    t.string   "birth_image3_file_name"
+    t.string   "birth_image3_content_type"
+    t.integer  "birth_image3_file_size"
+    t.datetime "birth_image3_updated_at"
+    t.string   "birth_image4_file_name"
+    t.string   "birth_image4_content_type"
+    t.integer  "birth_image4_file_size"
+    t.datetime "birth_image4_updated_at"
+    t.string   "birth_image5_file_name"
+    t.string   "birth_image5_content_type"
+    t.integer  "birth_image5_file_size"
+    t.datetime "birth_image5_updated_at"
+    t.string   "birth_image6_file_name"
+    t.string   "birth_image6_content_type"
+    t.integer  "birth_image6_file_size"
+    t.datetime "birth_image6_updated_at"
   end
 
   create_table "users", :force => true do |t|
