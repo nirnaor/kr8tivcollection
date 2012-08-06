@@ -24,8 +24,20 @@
 %div#emptydiv
 
 %div#birth
+  - if @jewel.birth_image1_file_size.nil? == false then
+    = image_tag @jewel.birth_image1.url, id: "birth"
   - if @jewel.birth_image2_file_size.nil? == false then
     = image_tag @jewel.birth_image2.url, id: "birth"
+  - if @jewel.birth_image3_file_size.nil? == false then
+    = image_tag @jewel.birth_image3.url, id: "birth"
+  - if @jewel.birth_image4_file_size.nil? == false then
+    = image_tag @jewel.birth_image4.url, id: "birth"
+  - if @jewel.birth_image2_file_size.nil? == false then
+    = image_tag @jewel.birth_image5.url, id: "birth"
+  - if @jewel.birth_image5_file_size.nil? == false then
+    = image_tag @jewel.birth_image2.url, id: "birth"
+  - if @jewel.birth_image6_file_size.nil? == false then
+    = image_tag @jewel.birth_image6.url, id: "birth"
 
 - if can? :update, @jewel
   = link_to t(:edit), edit_jewel_path(@jewel), class: 'btn'
