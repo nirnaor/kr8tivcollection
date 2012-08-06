@@ -17,7 +17,9 @@
       %td= jewel.category
       %td
         = link_to t(:show), jewel, class: 'btn btn-mini'
-        = link_to t(:edit), edit_jewel_path(jewel),
+
+        - if can? :update, jewel
+          = link_to t(:edit), edit_jewel_path(jewel),
           class: 'btn btn-mini'
         = link_to t(:destroy), jewel, 
           :confirm => t(:are_you_sure, default: "Are you sure?"), :method => :delete,

@@ -17,6 +17,7 @@ gem 'simple_enum'
 gem 'draper'
 gem 'gon'
 gem 'bcrypt-ruby'
+gem 'cancan'
 
 gem 'capistrano'
 gem 'rvm-capistrano'
