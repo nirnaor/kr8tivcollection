@@ -1,4 +1,5 @@
 class JewelsController < ApplicationController
+  load_and_authorize_resource
   # GET /jewels
   # GET /jewels.json
   def index

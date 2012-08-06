@@ -5,9 +5,9 @@ class Ability
     # Define abilities for the passed in user here. For example:
     #
     if user.nil?
-      can :read, :all
+      can :read, Jewel
     else
-      can :manage, :all
+      can :manage, Jewel
     end
     #
     # The first argument to `can` is the action you are giving the user permission to do.
