@@ -729,23 +729,8 @@ ContentFlow.prototype = {
 
         onclickActiveItem: function (item) {
             var url, target;
-
-            if (url = item.content.getAttribute('href')) {
-                target = item.content.getAttribute('target');
-            }
-            else if (url = item.element.getAttribute('href')) {
-                target = item.element.getAttribute('target');
-            }
-            else if (url = item.content.getAttribute('src')) {
-                target = item.content.getAttribute('target');
-            }
-
-            if (url) {
-                if (target)
-                    window.open(url, target).focus();
-                else
-                    window.location.href = url;
-            }
+            url = '../jewels/' + item.content.getAttribute('data-id')
+            window.open(url, target).focus();
         },
 
         onMakeInactive: function (item) {},

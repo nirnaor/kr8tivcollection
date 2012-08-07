@@ -8,8 +8,8 @@
     .indicator
   .flow
     -@jewels.each do |jewel|
-      =link_to jewel, class: 'item' do
-        =image_tag jewel.primary_image.url, class: "content", title: "dudi"
+      =image_tag jewel.primary_image.url, class: "content", class: 'item', 
+        title: jewel.name, :data => {:id => jewel.id}
   .globalCaption
   .scrollbar
     .slider
