@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_filter :authenticate
   def new
     @user = User.new
   end
@@ -12,5 +13,11 @@ class UsersController < ApplicationController
       render "new"
     end
   end
-    
+
+protected
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == "david" && password == "barak"
+    end
+  end   
 end

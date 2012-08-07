@@ -4,6 +4,7 @@ Kr8tivcollection::Application.routes.draw do
   resources :sessions
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
+  get 'new_user_for_site', to: 'users#new', as: 'new_user_for_site'
 
   get "home/index"
 
