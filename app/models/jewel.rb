@@ -1,6 +1,7 @@
 class Jewel < ActiveRecord::Base
   attr_accessible :description, :name, :weight, :category,
     :metal_color, :metal_weight, :clarity, :cut, :primary_image,
+    :show_in_home_page,
     :birth_image1, :birth_image2, :birth_image3, :birth_image4,
     :birth_image5, :birth_image6
 

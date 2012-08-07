@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120806151226) do
+ActiveRecord::Schema.define(:version => 20120807205354) do
 
   create_table "jewels", :force => true do |t|
     t.string   "name"
@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(:version => 20120806151226) do
     t.string   "birth_image6_content_type"
     t.integer  "birth_image6_file_size"
     t.datetime "birth_image6_updated_at"
+    t.boolean  "show_in_home_page"
   end
 
   create_table "users", :force => true do |t|
