@@ -6,7 +6,7 @@ class HomeController < ApplicationController
         src: jewel.primary_image.url,
         from: 'top left',
         to:   'bottom right 1.5x',
-        time: 2
+        time: 5
       }
     end
   end
