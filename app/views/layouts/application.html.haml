@@ -12,12 +12,12 @@
   %div#main
     %div#logoandmenu
       %div#banner
-        = link_to image_tag('blacklogo.gif'), root_path
         = if current_user
-          %h1
+          %div#loginheader
             logged in as 
             = current_user.email
             = link_to "Log Out", logout_path
+        = link_to image_tag('blacklogo.gif'), root_path
       %div#menu
         %ul#menulist
           %li
