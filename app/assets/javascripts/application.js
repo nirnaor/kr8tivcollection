@@ -12,7 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require contentflow_src
-//= require jquery.cross-slide.min
 //= include modernizr.custom.40054.js
-//= require_tree .
