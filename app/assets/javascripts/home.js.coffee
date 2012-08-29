@@ -4,4 +4,4 @@
 $ -> 
   if gon?
    if gon.jewels?
-    $('#slideshow').crossSlide({fade:1},gon.jewels)
+      $('#slideshow').crossSlide({fade:1},gon.jewels)
