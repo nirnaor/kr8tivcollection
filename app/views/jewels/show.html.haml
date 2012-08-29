@@ -37,3 +37,6 @@
 
 - if can? :update, @jewel
   = link_to t(:edit), edit_jewel_path(@jewel), class: 'btn'
+  = link_to t(:destroy), @jewel, 
+      :confirm => t(:are_you_sure, default: "Are you sure?"), :method => :delete,
+      class: 'btn'

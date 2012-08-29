@@ -6,4 +6,7 @@
 = render 'form'
 
 = link_to t(:show), @jewel, class: 'btn'
+= link_to t(:destroy), @jewel, 
+    :confirm => t(:are_you_sure, default: "Are you sure?"), :method => :delete,
+    class: 'btn'
 = link_to t(:back), jewels_path, class: 'btn'
