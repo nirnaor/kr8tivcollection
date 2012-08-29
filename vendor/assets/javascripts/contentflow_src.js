@@ -730,7 +730,7 @@ ContentFlow.prototype = {
         onclickActiveItem: function (item) {
             var url, target;
             url = '../jewels/' + item.content.getAttribute('data-id')
-            window.open(url, target).focus();
+            window.open(url, "_self").focus();
         },
 
         onMakeInactive: function (item) {},
