@@ -19,6 +19,6 @@ production:
   encoding: unicode
   database: diamonds
   pool: 5
-  username: nirnaori
+  username: 
   password:
 
