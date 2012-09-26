@@ -14,11 +14,4 @@ test:
   username: nirnaori
   password:
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: diamonds
-  pool: 5
-  username: 
-  password:
 
